@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Java Script</h1>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+    
+</body>
+<script>
+    const changeText = function(){
+        document.querySelector('h1').
+        innerHTML = `Biswarup ${Date.now().toLocaleString()}`
+    }
+
+    let start 
+
+    document.getElementById('start').addEventListener('click',function(){
+         start =setInterval(changeText,2000)
+    })
+   
+    document.querySelector('#stop').addEventListener('click',function(){
+     clearInterval(start)
+     console.log('Stopped');
+
+    })
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 16px;
+    border: 2px solid greenyellow;
+    background: rgb(11, 179, 185);
+    border-radius: 25px;
+}
+
+#cg{
+    font-size: 40px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    
+   
+}
