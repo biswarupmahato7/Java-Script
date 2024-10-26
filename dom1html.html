@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: wheat;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="main">
+        <li>JavaScript</li>
+    </ul>
+   
+
+</body>
+<script>
+    function addLanguage(lang){
+        if(typeof(lang) === 'string'){
+            let li = document.createElement('li')
+            li.innerHTML = `${lang}`
+            document.querySelector('.main').appendChild(li)
+        }
+    }
+
+    addLanguage("Python")
+
+    function addOptiLanguage (lang){
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.main').appendChild(li)
+    }
+
+    addOptiLanguage("c#")
+    addOptiLanguage("React")
+
+    let secLang = document.querySelector("li:nth-child(2)")
+    console.log(secLang);
+    let newLi = document.createElement('li')
+    newLi.textContent = "Angular"
+    secLang.replaceWith(newLi)
+
+   
+</script>
+</html>
