@@ -2523,21 +2523,21 @@
 
 //Custom Map///
 
-function cb(el){
-    return el * el;
+// function cb(el){
+//     return el * el;
 
-}
+// }
 
-function customMap(arr,cb){
-    let result =[];
-    for(let i=0;i<arr.length;i++){
-        let op = cb(arr[i]);
-        result.push(op)
-    }
-    return result;
+// function customMap(arr,cb){
+//     let result =[];
+//     for(let i=0;i<arr.length;i++){
+//         let op = cb(arr[i]);
+//         result.push(op)
+//     }
+//     return result;
     
-}
-console.log(customMap([1,2,3,4,5],cb))
+// }
+// console.log(customMap([1,2,3,4,5],cb))
 
 //custom filter
 
@@ -2576,3 +2576,1078 @@ console.log(customMap([1,2,3,4,5],cb))
 // }
 
 // console.log(customReduce([1,2,3,4,5],cb,0));
+
+
+
+// let {name,...rest} = obj
+// console.log(name);
+// console.log(rest)
+
+// // let copy = {...obj};
+// let copy = JSON.parse(JSON.stringify(obj))
+// copy.name = 'Amit'
+
+// copy.address.city = 'Purulia'
+
+// console.log(obj.name)
+// console.log(copy.name)
+
+// console.log(obj.address.city)
+// console.log(copy.address.city)
+
+
+// let obj = {
+//     name: 'Biswarup',
+//     roll: 23,
+//     address:{
+//         city:'Kolkata',
+//         pin: '723201'
+//     }
+// }
+
+// function flattenobj(obj,parent,result={}){
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key
+//         if(typeof(obj[key]) ==='object'){
+//             flattenobj(obj[key],propName,result)
+//         }else{
+//             result[propName] = obj[key]
+//         }
+//     }
+// }
+// let res={}
+// console.log(flattenobj(obj,null,res))
+// console.log(res)
+
+// let obj = {
+//     name:'Biswarup Mahato',
+//     roll: 23,
+//     address:{
+//         city: 'Purulia',
+//         pin: 723201
+//     }
+
+// }
+
+// function flattenObj(obj,parent,result={}){
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key
+//         if(typeof(obj[key])==='object'){
+//             flattenObj(obj[key],propName,result)
+//         }else{
+//             result[propName] = obj[key]
+//         }
+//     }
+
+// }
+// let res ={}
+// console.log(flattenObj(obj,null,res))
+// console.log(res)
+
+// let obj = {
+//     name:'Biswarup Mahato',
+//     roll: 23,
+//     address:{
+//         city: 'Purulia',
+//         pin: 723201
+//     }
+
+// }
+
+// function flattenObj(obj,parent,result){
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key
+//         if(typeof(obj[key]) === 'object'){
+//             flattenObj(obj[key],propName,result)
+//         }else{
+//             result[propName] = obj[key]
+//         }
+//     }
+// }
+// res = {}
+// flattenObj(obj,null,res)
+// console.log(res)
+
+// console.log('2' + 2 + '2');
+// console.log(2 + '2' - '2');
+
+// let  a = {}
+// let  b ={name:'Rahul'}
+// let  c = {name: 'Amit'}
+
+// a[b] = {name:'Ankit'}
+// a[c] = {name:'Rahul'}
+
+// console.log(a[b])
+// console.log(a[c])
+
+// console.log(true -'a')
+
+// console.log('2' + 2 + '2'); // 222
+// console.log(2+'2') //22 
+// console.log(2+2 +'3') //43
+// console.log(2+2 -'3') // 1
+// console.log(2 + '2' - '2'); //20
+
+// console.log(undefined==undefined)
+// console.log(undefined===undefined) //True For Both
+
+// let arr = [1,2,3,4,5]
+
+// let res = arr.map(el=>{
+//     return el>2
+// })
+
+// console.log(res);
+
+// let obj = {
+//     name:'Biswarup',
+//     age:23,
+//     address:{
+//         city:'Purulia',
+//         pin:723201
+//     }
+// }
+
+// function flattenObj(obj,parent,result){
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key
+//         if(typeof(obj[key]) ==='object'){
+//             flattenObj(obj[key],propName,result)
+//         }else{
+//             result[propName] = obj[key]
+//         }
+//     }
+// }
+
+// let res = {}
+// flattenObj(obj,null,res)
+// console.log(res);
+
+// let a ={}
+// let b = {name:'Amit'}
+// let c = {name:'Rahul'}
+
+//  b[b] = {name:'Dias'}
+//  a[c] = {name:'Vini'}
+
+// console.log(a)
+// var a = 5
+// console.log(a)
+// grettint()
+
+// function grettint(){
+//     console.log('Hi babu');
+    
+// }
+ 
+// hello()
+// function hello(){
+//     let c = 5
+//     console.log(c)
+// }
+
+// function outer(){
+//     let x = 10;
+//     function inner(){
+//         console.log(x);
+
+//     }
+//     inner()
+// }
+// outer()
+
+// ()=>{
+//     console.log('i ma here');
+    
+// })();
+
+// function info(game,player){
+//     console.log(`My Name is ${this.firstName} ${this.lastName} & My age is ${this.age},favorite game is ${game}& favorite player ${player}`);
+    
+// }
+
+// user1 = {
+//     firstName: "Biswarup",
+//     lastName: "Mahato",
+//     age:23
+// }
+
+// user2 = {
+//     firstName: "Sourav",
+//     lastName: "Mahato",
+//     age:23
+// }
+
+// info.call(user1,"football","Ronaldo");
+// info.call(user2,"cricket","Virat");
+
+// let user = {
+//     name: 'Biswarup',
+//     age: 23,
+//     address: {
+//         city: 'Purulia',
+//         Pin:723201
+
+//     }
+// }
+
+// function flattenObj(obj,parent,result={}){
+
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key: key
+//         if(typeof(obj[key]) === 'object'){
+//             flattenObj(obj[key],propName,result)
+
+//         }else{
+//             result[propName] = obj[key]
+//         }
+
+//     }
+//     return result
+// }
+
+// let finalresult = console.log(flattenObj(user,null))
+
+// function flattenObj(obj,parent,result={}){
+    
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key
+//         if(typeof(obj[key]) === 'object'){
+//             flattenObj(obj[key],propName,result)
+//         }else{
+//             result[propName] = obj[key]        }
+//     }
+//     return result;
+
+// }
+
+// const finalresult = flattenObj(user)
+// console.log(finalresult)
+
+// Array.prototype.myMap = function myFun(cb){
+//     let result = [];
+//     for(let i=0;i<this.length;i++){
+//         let ans = cb(this[i])
+//         result.push(ans);
+//     }
+//     return result;
+// }
+
+// let arr = [2,3,4,5,6];
+// console.log(arr.myMap(el=>el*10))
+
+// Array.prototype.myMap = function myFun(cb){
+//     let result = [];
+//     for(let i=0; i<this.length;i++){
+//         let ans = cb(this[i]);
+//         result.push(ans)
+        
+//     }
+//     return result;
+// }
+
+// let arr = [2,3,4,5]
+// console.log(arr.myMap(el=> el*10))
+
+// Array.prototype.myFilter = function myFun(cb){
+//     let result = [];
+//     for(let i=0;i<this.length;i++){
+//         let ans = cb(this[i]);
+//         if(ans===true) result.push(this[i]);
+        
+//     }
+//     return result;
+// }
+// let arr = [10,12,13,15,19,24,30]
+
+// console.log(arr.myFilter(el=>el%2 === 0))
+
+// const person1 = {
+//     name:'Alice',
+//     greet:function(greeting){
+//         console.log(`${greeting} my name is ${this.name}`)
+//     },
+//     age:23
+// }
+
+// const person2 = {name:'Biswarup'}
+
+// person1.greet.call(person2,'Hello')
+
+// Array.prototype.myMap = function myFun(cb){
+//     let result = [];
+//     for(let i=0;i<this.length;i++){
+//         let ans = cb(this[i])
+//         result.push(ans)
+//     }
+//     return result;
+// }
+// let arr= [2,3,4,5]
+
+// console.log(arr.myMap(el => el*2))
+
+// Array.prototype.myFilter = function myFun(cb){
+//     let result = [];
+//     for(let i=0;i<this.length;i++){
+//         let ans = cb(this[i])
+//         if(ans === true){
+//             result.push(this[i]);
+//         }
+//     }
+//     return result;
+// }
+
+// let arr = [2,5,10,11,24,20]
+// console.log(arr.myFilter(el=>el%2===0))
+
+// let obj1 = {
+//     name:'Alice',
+//     greet: function(greeting){
+//         console.log(`${greeting} my name is ${this.name}`)
+
+//     }
+// }
+
+// let obj2 = {name:'Biswarup'}
+// obj1.greet.call(obj2,'Hello')
+
+
+// user1 = {
+//     firstName: "Biswarup",
+//     lastName: "Mahato",
+//     age:23
+// }
+
+// user2 = {
+//     firstName: "Sourav",
+//     lastName: "Mahato",
+//     age:23
+// }
+
+// function info(game,player){
+//     console.log(`My Name is ${this.firstName} ${this.lastName} & My age is ${this.age},favorite game is ${game}& favorite player ${player}`);
+    
+// }
+
+// let fun = info.bind(user1,"Football", "Ronaldo");
+// console.log(fun)
+// fun();
+
+// Array.prototype.myReduce = function myFun(cb,initialVal){
+//     let result = initialVal;
+//     for(let i=0;i<this.length;i++){
+//         result = cb(result,this[i]);
+//     }
+//     return result;
+// }
+
+// let arr = [2,4,10,20]
+// console.log(arr.myReduce((a,c)=>a+=c,0))
+
+// Array.prototype.myReduce = function myFun(cb,initialVal){
+//     let result = initialVal;
+//     for(let i=0;i<this.length;i++){
+//         result = cb(result,this[i]);
+//     }
+//     return result;
+// }
+
+// let arr = [3,4,5,9]
+// console.log(arr.myReduce((a,c)=> a+=c,0))
+
+// let arr = [
+//     {name: 'Biswarup', dep: 'SDE', sal:5000},
+//     {name: 'Rohit', dep: 'HR', sal:2000},
+//     {name: 'Koushik', dep: 'SDE', sal:1000},
+//     {name: 'Sonam', dep: 'HR', sal:1000},
+//     {name: 'Rana', dep: 'CEO', sal:3000},
+// ]
+
+// function calculateSal(arr){
+//     return arr.reduce((result,emp) =>{
+//         if(result[emp.dep]){
+//             result[emp.dep] = +emp.sal
+//         }else{
+//             result[emp.dep] = emp.sal;
+
+//         }
+//         return result;
+//     },{})
+// }
+
+// console.log(calculateSal(arr))
+
+// console.log('Start')
+// let startTime = Date.now();
+// let interval = setInterval(()=>{
+//    if(Date.now() - startTime>= 2000){
+//     clearInterval(interval)
+//    }else{
+//      for(let i=0;i<3000;i++){
+//         console.log(i)
+//      }
+//    }
+// },2000)
+
+// console.log('End')
+
+// console.log(`Start`);
+
+// let interval = setInterval(()=>{
+//     console.log(`run till 2 sec`);
+     
+// },300)
+
+// setTimeout(()=>{
+//     clearInterval(interval)
+//     console.log(`End`);
+// },2000)
+
+// let arr = [1,2,4]
+//  arr[4] = 6
+//  console.log(arr.length)
+//  console.log(arr)
+
+// let {4:a} = [10,20,30,40,50];
+// console.log(a)
+
+// function abc(){
+//     console.log('I am a function');
+    
+// }
+
+// let val = new abc();
+// console.log(val);
+
+// Array.prototype.myMap = function myFun(cb){
+//     let result = [];
+//     for(let i=0;i<this.length;i++){
+//         let ans = cb(this[i])
+//         result.push(ans)
+//     }
+//     return result;
+// }
+
+// let arr = [2,3,4,5,6]
+// console.log(arr.myMap(el=>el*10))
+
+// Array.prototype.myReduce  = function myFun(cb,initialVal){
+//     let result = initialVal;
+//     for(let i=0;i<this.length;i++){
+//         result = cb(result,this[i]);
+//     }
+//     return result;
+// }
+
+// let arr = [2,3,4,5,10]
+// console.log(arr.myReduce((a,c)=> a+=c,0))
+
+// Array.prototype.myReduce = function myFun(cb,initialVal){
+//     let result = initialVal;
+//     for(let i=0;i<this.length;i++){
+//         result = cb(result,this[i]);
+//     }
+//     return result;
+// }
+
+// let arr = [2,4,5,6,7,10];
+// console.log(arr.myReduce((a,c) => a+=c,0))
+
+// 
+// Array.prototype.myFilter = function myFun(cb){
+//     let result = [];
+//     for(let i=0; i<this.length;i++){
+//         let ans = cb(this[i])
+//         if(ans === true) result.push(this[i])
+
+//     }
+//     return result
+// }
+
+// let arr = [20,5,6,22,23,45,60]
+// console.log(arr.myFilter(el=> el%2 === 0))
+
+// let obj = {
+//     name:'Biswarup',
+//     age:24,
+//     address:{
+//         city:'Purulia',
+//         pin:23333
+
+//     }
+// }
+
+// function flattenObj(obj,parent,result={}){
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key
+
+//         if(typeof(obj[key])==='object'){
+//             flattenObj(obj[key],propName,result);
+//         }else{
+//             result[propName] = obj[key]
+
+//         }
+//     }
+//     return result;
+// }
+
+// let finalresult = flattenObj(obj,null)
+// console.log(finalresult)
+
+// let obj = {
+//     name:'Biswarup',
+//     age:24,
+//     address:{
+//         city:'Purulia',
+//         pin:12345
+//     }
+// }
+
+// function flatenObj(obj,parent,result={}){
+//     for(let key in obj){
+//         let propName = parent?parent+'_'+key:key;
+//         if(typeof(obj[key])==='object'){
+//             flatenObj(obj[key],propName,result)
+//         }else{
+//             result[propName] = obj[key]
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(flatenObj(obj,null))
+
+// function fact(n){
+//     if(n === 2) return 2
+//     return n * fact(n-1);
+// }
+// console.log(fact(5));
+
+// function findMax(arr, n) {
+//   if (n === 1) {
+//     return arr[0];
+//   }
+//   return Math.max(arr[n - 1], findMax(arr, n - 1));
+// }
+
+// const arr = [20, 5, 7, 9, 1];
+// console.log(findMax(arr, arr.length)); 
+
+// function printNum(n){
+//   if(n>0){
+//     printNum(n-1)
+//     console.log(n);
+//   }
+// }
+// printNum(5)
+
+// function sumOfNum(n){
+//   if(n===1){
+//     return 1;
+//   }
+//   return n + sumOfNum(n-1)
+// }
+
+// console.log(sumOfNum(5))
+
+// let obj = {
+//   name: 'Biswarup',
+//   age:24,
+//   address:{
+//     city:'Purulia',
+//     pin:723201
+//   }
+
+// }
+
+// function flatenObj(obj,parent,result={}){
+//   for(let key in obj){
+//     let propName = parent?parent+'_'+key:key
+    
+//     if(typeof(obj[key])=== 'object'){
+//       flatenObj(obj[key],propName,result)
+//     }else{
+//       result[propName] = obj[key];
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(flatenObj(obj,null))
+
+// Array.prototype.myRedece = function myFun(cb,initialVal){
+//   let result = initialVal;
+//   for(let i=0;i<this.length;i++){
+//     result = cb(result,this[i]);
+//   }
+//  return result;
+// }
+// let arr = [1,2,3,4,5]
+
+// console.log(arr.myRedece((a,c) => a+=c,0))
+
+// Array.prototype.myMap = function myFun(cb){
+//   let result = [];
+//   for(let i=0;i<this.length;i++){
+//     let ans = cb(this[i]);
+//     result.push(ans)
+//   }
+//   return result;
+// }
+
+// let arr = [10,2,3,15,22,7]
+// console.log(arr.myMap(el=> el*10))
+
+// Array.prototype.myFilter = function myFun(cb){
+//   let result = [];
+//   for(let i=0;i<this.length;i++){
+//     let ans = cb(this[i])
+//     if(ans === true){
+//       result.push(this[i]);
+//     }
+//   }
+//   return result
+// }
+
+// let arr = [10,2,4,5,71,11,12]
+// console.log(arr.myFilter(el => el % 2 ===0))
+
+// let arr = [1,2,3,4,5]
+
+// function subArray(arr,k){
+//   let ans = [];
+//   for(let i=0; i<arr.length;i+=k){
+//     ans.push(arr.slice(i,i+k))
+//   }
+//   return ans;
+// }
+
+// console.log(subArray(arr,3))
+
+// let arr1 = [1,2,7,4]
+// let arr2 = [2,4,5,6,7]
+
+// function commonEle(arr1,arr2){
+//   let ans = arr1.filter(el=> arr2.includes(el))
+//   return ans
+
+// }
+// console.log(commonEle(arr1,arr2))
+
+// console.log('Start')
+
+// setTimeout(()=>{
+//   console.log(`Call back Queue`)
+// },1000)
+
+// fetch('https://dummyjson.com/products/1')
+//     .then(res => res.json())
+//     .then(data => console.log(data)) // Promises goes to MicroTask queue 
+//     // MicroTak Queue has more priority then call back Queue
+
+// function greeting(name,callback){
+//   setTimeout(()=>{
+//     const message = `hello${name}`
+    
+//     callback(message)
+//   },1000)
+  
+// }
+
+// function displayMessage(message){
+//   console.log(message)
+// }
+
+
+// greeting(' Biswarup',displayMessage)
+
+function one(val,cb){
+  setTimeout(()=>{
+
+     let result = val+1;
+     cb(result)
+  },1000)
+}
+
+function two(val,cb){
+  
+  result = val+2;
+  return result;
+}
+
+function three(val,cb){
+  return val+3;
+}
+
+// function final(){
+//   let result = 0;
+//   result = one(result);
+//   result = two(result);
+//   result = three(result)
+//   console.log(result);
+  
+// }
+// final()
+
+// function final(){
+//   one(0,(result)=>{
+//     two(result,(result2)=>{
+//       three(result2,(result3)=>{
+//         console.log(result3)
+
+//       })
+//     })
+//   })
+
+// }
+
+// final()
+
+// let promise = new Promise((resolve,reject)=>{
+//   let result;
+
+//   setTimeout((result)=>{
+//     result = false;
+//     if(result){
+//       resolve(`Succesfull!`);
+//     }else{
+//       reject(`Error Occers`);
+//     }
+//   },1000)
+  
+
+ 
+// });
+// console.log(`status- `,promise)
+
+// promise.then(result=> console.log(result))
+//         .catch(error=> console.log(error))
+
+// let promise  = new Promise((resolve,reject)=>{
+//   let result;
+
+//   setTimeout(()=>{
+//     result = true;
+//     if(result){
+//       resolve(`Succesful`)
+//     }else{
+//       reject(`Error`)
+//     }
+//   },1000)
+// })
+
+// promise.then(data=> console.log(data))
+//        .catch(error=> console.log(error))
+
+// let example = fetch('https://dummyjson.com/products/1')
+// console.log(example)
+// example.then(response=> response.json()
+//                         .then(result => console.log(result)))
+// example.catch(err=>console.log(err))
+
+
+// const api1 = fetch('https://dummyjson.com/product/1')
+//              .then(response => response.json())
+// const api2 = fetch('https://dummyjson.com/user/1')
+//              .then(response => response.json())
+// const api3 = fetch('https://dummyjson.com/posts/1')
+//              .then(response => response.json())
+
+// Promise.any([api1,api2,api3])
+//        .then(response =>{
+//         console.log(response)
+//        })
+//        .catch(err => console.log(err))
+
+// Promise.all([api1,api2,api3])
+//        .then( responses =>{
+//            for(let response of responses){
+//               console.log(response)
+//            }
+//        })
+//        .catch(err => console.log(err))
+
+// function fetchData(){
+//   fetch('https://dummyjson.com/products/1')
+//        .then(response => response.json())
+//        .then(result => console.log(result))
+// }
+// fetchData()
+
+
+// async function fetchDataAsync(){
+// try{
+//   const response = await fetch('https://dummyjson.com/products/1')
+//   const result = await response.json()
+//   console.log(result)
+// }catch(err){
+//   console.log(err)
+
+// }
+// }
+
+// fetchDataAsync()
+
+// async function apiCall(){
+//   try{
+//     let response = await fetch('https://dummyjson.com/products/1')
+//     let result = await response.json()
+//     console.log(result);
+//   }catch(err){
+//     console.log(err)
+//   }
+// }
+
+// apiCall()
+
+// let arr = ['Alice','Bob','Sam', 'Jim', 'Alok','Babu','Anu']
+
+// let copyArr = [...arr] // not works for nested array
+
+
+
+// let copyArr2 = JSON.parse(JSON.stringify(arr))
+// console.log( 'Copy array-2 ',copyArr2) /// Deep copy 
+
+// console.log('Copy array-1 ',copyArr) // not worn for nested 
+// arr.pop()
+// console.log('Original array ',arr)
+
+
+// let obj = {name:'Biswarup',
+//   age:24,
+//   job: 'student'
+// }
+
+
+// let copyObj = JSON.parse(JSON.stringify(obj)) // Deep Copy
+// let shalowCopyObj = obj // shalow Copy
+
+// obj.name = 'Amit'
+// console.log(obj)
+// console.log(copyObj)
+
+
+// let firstName = ['Alice','BOb','Smith']
+// let lastName = ['Mahati', 'Roy', 'du']
+// let fullName = [...firstName,...lastName]
+// console.log(fullName)
+
+// const products =[
+// { name: "Laptop", type: "Electronics" },
+// { name: "Phone", type: "Electronics" },
+// { name: "Tablet", type: "Electronics" },
+// { name: "Monitor", type: "Electronics" },
+// { name: "Shirt", type: "Clothing" },
+// { name: "Pants", type: "Clothing" },
+// { name: "Shoes", type: "Footwear" },]
+
+// let result = products.filter(el =>el.type === 'Clothing')
+// console.log(result)
+
+// const users = [
+//   { name: "John", age: 20, role: "admin" },
+//   { name: "Jane", age: 21, role: "user" },
+//   { name: "Doe", age: 22, role: "admin" },
+  
+// ];
+
+// let obj = {}
+// users.forEach((user)=>{
+//   if(obj[user.role]){
+//     obj[user.role].push(user)
+
+//   }else{
+//     obj[user.role] = []
+//     obj[user.role].push(user)
+//   }
+// })
+
+// console.log(obj)
+
+// const users = [
+//   { id: 1, name: "Alice", age: 28 },
+//   { id: 2, name: "Bob", age: 35 },
+//   { id: 3, name: "Charlie", age: 42 },
+//   { id: 4, name: "Diana", age: 31 },
+//   { id: 5, name: "Ethan", age: 39 },
+// ]
+
+// let newArr = users.filter((users)=>{
+//   return users.id != 2
+// })
+
+// console.log(newArr)
+
+// const promiseFour = new Promise(function(resolve,reject){
+//   setTimeout(function(){
+//       let error = false
+//       if(!error){
+//           resolve({userName:'mahato Biswarup', address:'Purulia'})
+//       }else{
+//           reject('ERROR: Error Occurs ')
+//       }
+//   },1000)
+// })
+
+// promiseFour.then((user)=>{
+//   console.log(user.userName)
+// })
+// .catch(err => console.log(err))
+
+// let promise = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     let data = true
+//     if(data){
+//       resolve('Data recived')
+//     }else{
+//       reject('Error Occers')
+//     }
+//   },1000)
+// })
+
+// promise.then(result => console.log(result))
+// .catch(err=> console.log(err))
+
+// function first(val,callback){
+//   setTimeout(()=>{
+//     let result = val+1;
+//    callback(result)
+//   },2000)
+// }
+
+// function second(val,callback){
+//   let result2 = val+2;
+//   callback(result2)
+// }
+// function third(val,callback){
+//  let result3 = val+3;               
+//  callback(result3)
+// }
+
+// let FinalResult = first(0,(result)=>{
+//   second(result,(result1)=>{
+//     third(result1,(result2)=>{
+//       console.log(result2);
+      
+//     })
+//   })
+// })
+
+// console.log(FinalResult)
+
+// function first(val){
+//   return new Promise((resolve) =>{
+//     let result = val+1
+//     resolve(result)
+//   })
+// }
+
+// function second(val){
+//   return new Promise((resolve)=>{
+//     let result1 = val+2;
+//     resolve(result1)
+//   })
+// }
+
+// function third(val){
+//  return new Promise((resolve)=>{
+//   let result2 = val+3;
+//   resolve(result2)
+//  })
+// }
+
+// async function finalresult(){
+//   try{
+//     let result = await first(0)
+//     let result1 = await second(result)
+//     let result2 = await third(result1)
+//     console.log(result2);
+    
+//   }catch(err){
+//     console.log(err)
+    
+//   }
+// }
+// finalresult()
+
+// console.log(a)
+// console.log(b)
+// var a = b =5
+
+
+
+// const person = {
+//   id: 1,
+//   name: "John Doe",
+//   address: "123 Main Street"
+// };
+
+// Object.defineProperty(person,'id',{
+//   writable: false,
+//   configurable: false,
+// })
+
+// person.id = 2
+// console.log(person.id)
+
+// let arr = [2,5,3,7,1]
+
+// function maxElement(arr){
+//   return arr.reduce((a,c)=>{
+//     if(c>a){
+//       a = c;
+//     }
+//     return a 
+//   },-Infinity)
+// }
+
+// console.log(maxElement(arr))
+// let max = Math.max(...arr)
+// console.log(max)
+
+let stack_arr = new Array(6);
+let top = -1;
+let length = stack_arr.length;
+
+function push(data){
+  top++;
+  if(top>length-1){
+    console.log('Stack is already full');
+    top--;
+    return;
+  }
+  stack_arr[top] = data;
+
+}
+
+function pop(){
+  if(top<0){
+    console.log('Stack is Empty')
+  }else{
+    let popedElement = stack_arr[top];
+    stack_arr[top] = undefined;
+    top--;
+    return popedElement
+  }
+}
+
+push(10)
+push(20)
+push(30)
+push(40)
+push(50)
+push(60)
+push(70)
+
+pop()
+
+function print(){
+  for(let i=top;i>=0;i--){
+    console.log(stack_arr[i])
+  }
+  
+}
+
+print()
